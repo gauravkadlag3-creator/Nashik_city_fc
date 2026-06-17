@@ -13,15 +13,16 @@
       font-family: cambria, sans-serif;
     }
 
-    /* body {
+    /*body {
       background: #0b3470;
       color: #111;
-    } */
-    body {
+    }*/
+
+     body {
       background:
-        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        linear-gradient(rgba(0,0,1,.50), rgba(0,0,1,.50)),
         url("https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=1600&q=80");
-    
+
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -267,11 +268,77 @@
 
 <body>
 
+<style>
+  .top-bar{
+    background: #000;
+    padding: 8px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .news-text{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .social-icons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .social-icons img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    transition: 0.3s ease;
+  }
+
+  .social-icons img:hover{
+    transform: scale(1.15);
+  }
+  .right-top{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .right-top img{
+    width: 20px !important;
+    height: 20px !important;
+    object-fit: contain;
+  }
+
+  .right-top img:hover{
+    transform: scale(1.15);
+  }
+</style>
   <header>
-    <div class="top-bar">
-      <span>latest News</span>
-      <span>Instagram | YouTube | WhatsApp</span>
+      <div class="top-bar">
+
+    <div class="left-top">
+      <span class="news-text">Latest News</span>
     </div>
+
+    <div class="right-top">
+
+      <a href="https://www.instagram.com/nashikcityfootballclub?igsh=MXZvbjhsOHI4M3hxOA==" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+      </a>
+
+      <a href="https://youtube.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+      </a>
+
+      <a href="https://wa.me/919999999999" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+      </a>
+
+    </div>
+
+  </div>
 
     <nav>
       <div class="logo">NASHIK CITY FC</div>
@@ -405,12 +472,27 @@
   </section>
 
   <section class="sponsors">
-    <h2 class="section-title">Our Sponsors</h2>
-    <div class="sponsor-box">Sponsor Logo 1</div>
-    <div class="sponsor-box">Sponsor Logo 2</div>
-    <div class="sponsor-box">Sponsor Logo 3</div>
+    <h2 class="section-title">Our logo</h2>
+ <div class="sponsor-box">
+    <img src="https://raw.githubusercontent.com/gauravkadlag3-creator/Nashik_city_fc/5caff4f8de5024e0e2e5787ec5f0b225cf4e8340/Nashik%20City%20FC%20Logo%20(white%20bg)%20(2).png" alt="NCFC Logo">
+  </div>
   </section>
+<style>
 
+.sponsor-box img{
+  width: 220px;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.4));
+}
+
+</style>
   <section id="contact" class="contact">
     <h2 class="section-title">Contact Us</h2>
     <div class="contact-box">
